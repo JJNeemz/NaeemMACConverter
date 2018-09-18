@@ -8,8 +8,11 @@
 		}
 
 		#ISE, #CM {
-			border: 1px solid black;
 			height: 75px;
+		}
+
+		#cmFormatted, #iseFormatted {
+			padding-left: 25px;
 		}
 	</style>
 </head>
@@ -18,17 +21,17 @@
 	<div>
 		<h3>Unformatted MAC Address:
 			<span>
-				<input id="iseFormatter" type="text" name="iseFormatter" placeholder="Paste unformatted MAC">
+				<input id="iseFormatter" type="text" name="iseFormatter" placeholder="Paste unformatted MAC" autocomplete="off">
 				<button id="formatButton">Format</button>
 			</span>
 		</h3>
+		<hr>
 	</div>
 	<div>
 		<div id="ISE">
 			<h4 id="iseFormat">ISE:</h4>
 			<span id="iseFormatted"></span>
 		</div>
-		<hr>
 		<div id="CM">
 			<h4 id="cmFormat">Call Manager:</h4>
 			<span id="cmFormatted"></span>
