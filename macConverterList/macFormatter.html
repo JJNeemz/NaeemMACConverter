@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAC Formatter</title>
+	<style>
+		body{
+			overflow: auto;
+		}
+		h2 {
+			text-decoration: underline;
+		}
+
+		#ISE, #CM {
+			margin-bottom: 35px;
+		}
+
+		p.macList{
+			margin:0;
+			margin-left: 25px;
+			padding:0;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Naeem's Miraculous MAC Converter</h2>
+	<div>
+		<h3>Unformatted MAC Address:
+			<span>
+				<textarea id="iseFormatter" type="text" name="iseFormatter" placeholder="Paste unformatted MAC" autocomplete="off"></textarea> 
+				<button id="formatButton">Format</button>
+			</span>
+		</h3>
+		<hr>
+	</div>
+	<div id="formattedContent">
+		<div id="ISE">
+			<h4 id="iseFormat">ISE:</h4>
+			<div id="iseContent"></div>
+		</div>
+		<div id="CM">
+			<h4 id="cmFormat">Call Manager:</h4>
+			<div id="cmContent"></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="macFormatterlist.js"></script>
+</body>
+</html>
